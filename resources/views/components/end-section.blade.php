@@ -10,7 +10,7 @@
 
 
         <div class="w-full sm:w-1/3 flex justify-center">
-            <img src="{{ asset('storage/landing/tripmate.png') }}" alt="TripMate logo" class="h-34 w-34 sm:h-34 sm:w-34 object-contain">
+            <img src="{{ asset('storage/landing/nowgo.png') }}" alt="NowGo logo" class="h-34 w-34 sm:h-34 sm:w-34 object-contain">
         </div>
 
     </div>

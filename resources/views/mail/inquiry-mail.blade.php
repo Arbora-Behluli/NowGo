@@ -57,7 +57,7 @@
         </p>
         <footer>
             <p>We will get back to you shortly!</p>
-            <p>The TripMate Team</p>
+            <p>The NowGo Team</p>
         </footer>
     </div>
 </body>

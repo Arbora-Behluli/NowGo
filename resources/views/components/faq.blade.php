@@ -11,7 +11,7 @@
             <div class="py-5">
                 <details class="group">
                     <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                        <span>  What is the TripMate vehicle I saw driving down my street and what is it doing?</span>
+                        <span>  What is the NowGo vehicle I saw driving down my street and what is it doing?</span>
                         <span class="transition group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -45,7 +45,7 @@
             <div class="py-5">
                 <details class="group">
                     <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                        <span>   How does TripMate think about safety?</span>
+                        <span>   How does NowGo think about safety?</span>
                         <span class="transition group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -54,7 +54,7 @@
                                 </svg>
                             </span>
                     </summary>
-                    <p class="group-open:animate-fadeIn mt-3 text-neutral-600">Safety is foundational to everything we do at TripMate. For a detailed overview of safety at TripMate, please visit our Safety page.
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-600">Safety is foundational to everything we do at NowGo. For a detailed overview of safety at NowGo, please visit our Safety page.
                     </p>
                 </details>
             </div>
@@ -62,7 +62,7 @@
             <div class="py-5">
                 <details class="group">
                     <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                        <span>   How does TripMate see and interact with other vehicles, people on bikes?</span>
+                        <span>   How does NowGo see and interact with other vehicles, people on bikes?</span>
                         <span class="transition group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -79,7 +79,7 @@
             <div class="py-5">
                 <details class="group">
                     <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                        <span> Where can i learn more about TripMate's technology?</span>
+                        <span> Where can i learn more about NowGo's technology?</span>
                         <span class="transition group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -96,7 +96,7 @@
             <div class="py-5">
                 <details class="group">
                     <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                        <span>  When will i be able to ride in a TripMate?</span>
+                        <span>  When will i be able to ride in a NowGo?</span>
                         <span class="transition group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -105,7 +105,7 @@
                                 </svg>
                             </span>
                     </summary>
-                    <p class="group-open:animate-fadeIn mt-3 text-neutral-600">Thank you for your interest in including TripMate in your event! Please reach out to community@tripmate.com with details, and a member of our crew will be in touch.
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-600">Thank you for your interest in including NowGo in your event! Please reach out to community@nowgo.com with details, and a member of our crew will be in touch.
                     </p>
                 </details>
             </div>

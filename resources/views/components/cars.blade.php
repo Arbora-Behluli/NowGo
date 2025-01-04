@@ -36,7 +36,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7m-9 2v10m-4-6h8" />
             <h2 class="text-2xl text-[#290e07] font-bold mt-2 title font-[700]">
                 <a class="text-lg font-bold text-black mt-2">
-                    <a href="about:blank" target="_blank">Chat with your tripmate</a>
+                    <a href="about:blank" target="_blank">Chat with your nowgo</a>
             </h2>
             <p class="text-center text-gray-700 mt-2 px-2">Stay connected with your passenger or driver using the in-app chat feature. Enhance coordination and enjoy a stress-free journey with uninterrupted communication.</p>
         </div>

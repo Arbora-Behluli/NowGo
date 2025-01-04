@@ -4,7 +4,7 @@
             <div class="flex items-center justify-center mt-8">
                 <div class="flex items-center">
                     <a href="/">
-                    <img src="{{ asset('storage/landing/tripmate.png') }}" class="flex mx-1 font-mono text-2xl font-bold w-[140px]" href="/" />
+                    <img src="{{ asset('storage/landing/nowgo.png') }}" class="flex mx-1 font-mono text-2xl font-bold w-[140px]" href="/" />
                     </a>
                 </div>
             </div>

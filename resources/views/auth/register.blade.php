@@ -4,7 +4,7 @@
     <div class="flex-col flex self-center lg:px-14 sm:max-w-4xl xl:max-w-md z-10" style="transform: translateY(-40px);">
         <div class="self-start hidden lg:flex flex-col text-gray-300">
             <h1 class="my-3 font-semibold font-sans text-4xl">Create your account</h1>
-            <p class="pr-3 text-sm opacity-75">Join us on this journey with TripMate!</p>
+            <p class="pr-3 text-sm opacity-75">Join us on this journey with NowGo!</p>
         </div>
     </div>
     <div class="flex justify-center self-center pl-4 pr-4 z-10">

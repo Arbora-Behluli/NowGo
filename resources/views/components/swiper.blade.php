@@ -105,7 +105,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                Shumë shpesh e kam përdorur TripMate. Kam pas eksperiencë të mirë. M'ka rra mu njoftu me njerëz të ndryshëm, me ndëgju muzika të ndryshme.
+                                Shumë shpesh e kam përdorur NowGo. Kam pas eksperiencë të mirë. M'ka rra mu njoftu me njerëz të ndryshëm, me ndëgju muzika të ndryshme.
                             </p>
                         </div>
 
@@ -173,7 +173,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                TripMate është një aplikacion fantastik për të planifikuar dhe organizuar udhëtimet. Funksionet janë intuitive dhe të thjeshta për t'u përdorur.
+                                NowGo është një aplikacion fantastik për të planifikuar dhe organizuar udhëtimet. Funksionet janë intuitive dhe të thjeshta për t'u përdorur.
                             </p>
                         </div>
 
@@ -207,7 +207,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                L'utilizzo di un'app di viaggio come TripMate mi ha fornito come turista navigazione, conoscenza locale e suggerimenti sulla sicurezza per rendere molto più.
+                                L'utilizzo di un'app di viaggio come NowGo mi ha fornito come turista navigazione, conoscenza locale e suggerimenti sulla sicurezza per rendere molto più.
                             </p>
                         </div>
 
@@ -240,7 +240,7 @@
                                 </svg>
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                As a tourist in Kosovo, I really liked the TripMate application and I felt safe to travel. I have used TripMate quite often. I could connect with other travelers also.
+                                As a tourist in Kosovo, I really liked the NowGo application and I felt safe to travel. I have used NowGo quite often. I could connect with other travelers also.
                             </p>
                         </div>
 

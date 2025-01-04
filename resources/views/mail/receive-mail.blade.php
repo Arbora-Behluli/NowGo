@@ -69,7 +69,7 @@
     
         <footer>
             <p>You can reply directly to the user via their email address.</p>
-            <p>The TripMate Team</p>
+            <p>The NowGo Team</p>
         </footer>
     </div>    
 </body>

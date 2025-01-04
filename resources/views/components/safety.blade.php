@@ -5,7 +5,7 @@
                     We want all of us to be on the same page about safety
                 </h1>
                 <p class="p-4 w-full">
-                    And so, we're calling this page our safety pact – a 3‑sided alliance between passengers, drivers and TripMate, with mutual responsibilities for every single ride
+                    And so, we're calling this page our safety pact – a 3‑sided alliance between passengers, drivers and NowGo, with mutual responsibilities for every single ride
                 </p>
             </div>
             <div class="w-1/3 hidden lg:block">
