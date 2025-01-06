@@ -71,8 +71,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base">
-                                Përshendetje! Deshta me ju përgezu për punën që e keni bërë deri tani. Unë udhëtoj që 17 vjet dhe me këtë aplikacion që e keni bo, me të vërtet a keni ndihmuar shumë.
-                            </p>
+                                I’ve been using NowGo for all my parcel deliveries, and I must say, I am impressed with their speed and reliability. The delivery was on time, and the tracking system also.
                         </div>
 
 
@@ -105,7 +104,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                Shumë shpesh e kam përdorur NowGo. Kam pas eksperiencë të mirë. M'ka rra mu njoftu me njerëz të ndryshëm, me ndëgju muzika të ndryshme.
+                                The app is so easy to navigate! I’ve had no issues with booking shipments, and the notifications keep me informed about the status of my packages.
                             </p>
                         </div>
 
@@ -139,7 +138,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                Në fillim kom hezitu me postu në këtë grup se kom mendu që për femra osht ma problem me udhtu me persona të panjohur, ama gjithcka u kon n'rregull.
+                                I had a question about my shipment, and the customer support team was quick to respond and resolve my issue. Their professionalism and promptness made.
                             </p>
                         </div>
 
@@ -173,7 +172,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                NowGo është një aplikacion fantastik për të planifikuar dhe organizuar udhëtimet. Funksionet janë intuitive dhe të thjeshta për t'u përdorur.
+                                NowGo has made sending packages so much easier. I can send parcels with just a few taps on my phone, and the delivery is always fast.
                             </p>
                         </div>
 
@@ -207,7 +206,7 @@
 
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                L'utilizzo di un'app di viaggio come NowGo mi ha fornito come turista navigazione, conoscenza locale e suggerimenti sulla sicurezza per rendere molto più.
+                                I love the combination of affordability and speed with NowGo. The rates are reasonable, and I get my parcels delivered within the promised time frame.
                             </p>
                         </div>
 
@@ -240,7 +239,7 @@
                                 </svg>
                             </div>
                             <p class="text-black-600 text-sm sm:text-base ">
-                                As a tourist in Kosovo, I really liked the NowGo application and I felt safe to travel. I have used NowGo quite often. I could connect with other travelers also.
+                                I trust NowGo for all my important deliveries. Knowing that my items are in good hands gives me peace of mind. I’ve never had any issues, and the service thank you also.
                             </p>
                         </div>
 

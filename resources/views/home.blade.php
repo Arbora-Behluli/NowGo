@@ -7,14 +7,10 @@
         button-link="/about"
     />
     <x-cars />
-    <x-our-services/>
-    <x-statistic-box/>
     <x-partners />
     <x-safety />
-    <x-icons />
     <x-contact />
     <x-swiper />
-    <x-end-section/>
 </x-app-layout>
 @if (!Auth::check() && request()->is('/') || request()->is('home'))
 <x-footer />
