@@ -2,7 +2,6 @@
     @click.outside="open = false" 
     @scroll.window="open = false" 
     class="fixed top-0 left-0 right-0 lg:left-0 lg:right-0 text-white flex justify-between md:bg-black md:bg-opacity-50 bg-black items-center lg:px-5 py-3  bg-opacity-50 backdrop-blur-lg shadow-lg rounded-b-lg mx-auto z-50">
-    <img id="logo" src="{{ asset('storage/landing/nowgo.png') }}" class=" flex  mx-1 font-mono text-2xl font-bold w-[140px] " href="/"></img>
     <div :class="{'h-fit': open, 'h-0': ! open}" class="absolute w-full  lg:backdrop-blur-none bg-gray-500 bg-opacity-50 md:bg-opacity-0  rounded-xl mt-4 md:mt-1 top-14 overflow-hidden   md:relative md:h-fit md:top-0">
         <ul class=" flex text-md lg:text-lg flex-col gap-4 py-4 px-4 md:py-0  md:flex-row md:justify-center md:gap-0 ">
                 <li class="mx-3">
@@ -42,7 +41,7 @@
             </button>
             <button
                 onclick="location.href='{{ route('register') }}'"
-                class="mx-3 whitespace-nowrap border-solid hover:font-bold bg-white text-black border-2 shadow-md hover:shadow-gray-600  focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out">
+                class="mx-3 whitespace-nowrap border-solid hover:font-bold bg-yellow-400 text-white  shadow-md hover:shadow-gray-600  focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out">
                 Register
             </button>
         </div>

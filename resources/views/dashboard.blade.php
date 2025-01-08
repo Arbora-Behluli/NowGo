@@ -1,59 +1,59 @@
 <x-app-layout>
-    <div class="container px-6 py-8 mx-auto">
-        <div class="text-center bg-white p-6 rounded-md shadow-sm mb-6">
-            <h1 class="text-4xl font-bold text-customgreen-500">{{ __('messages.Welcome') }} , {{ Auth::user()->name }}!</h1>
-            <p class="text-lg text-gray-600 mt-2">{{ __('messages.Start your journey, one trip at a time!') }}</p>
+    <div class="container px-6 py-8 mx-auto flex flex-col md:flex-row items-start md:items-center">
+        <!-- Welcome Message -->
+        <div class="text-left p-6 mb-6 md:w-1/2 bg-transparent">
+            <div class=" p-6 ">
+                <h1 class="text-4xl font-bold text-gray-800">
+                    {{ __('messages.Welcome') }}, {{ Auth::user()->name }}!
+                </h1>
+                <p class="text-lg text-gray-800 mt-2">
+                    {{ __('messages.Start your journey, one trip at a time!') }}
+                </p>
+            </div>
         </div>
 
-        <div class="mt-4">
-            <div class="flex flex-wrap -mx-6">
-                <!-- Total Users -->
-                <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
-                    <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-                      
-                        <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
-                            <img src="{{ asset('storage/icons/users.svg') }}" alt="Users" class="h-6 w-6"/>
-                        </div>
-                        <div class="mx-5">
-                            <a href="{{ route('superadmin.index') }}">
-                                <h4 class="text-2xl font-semibold text-gray-700">{{$totalUsers}}</h4>
-                                <div class="text-gray-500">{{ __('messages.Total Users') }}</div>
-                            </a>
-                        </div>
-                    
-                    </div>
+        <!-- Total Stats -->
+        <div class="flex flex-col w-full md:w-1/2 space-y-6">
+            <!-- Total Users -->
+            <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+                <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
+                    <img src="{{ asset('storage/icons/users.svg') }}" alt="Users" class="h-6 w-6" />
                 </div>
-
-                <!-- Total Trips -->
-                <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
-                    <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-                        <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
-                            <img src="{{ asset('storage/icons/road.svg') }}" alt="Trips" class="h-6 w-6"/>
-                        </div>
-                        <div class="mx-5">
-                            <a href="{{ route('superadmin.index', ['tab' => 'trips']) }}">
-                                <h4 class="text-2xl font-semibold text-gray-700">{{$totalTrips}}</h4>
-                                <div class="text-gray-500">{{ __('messages.Total Trips') }}</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Total Bookings -->
-                <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
-                    <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-                        <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
-                            <img src="{{ asset('storage/icons/cars.svg') }}" alt="Bookings" class="h-6 w-6"/>
-                        </div>
-                        <div class="mx-5">
-                            <a href="{{ route('superadmin.index', ['tab' => 'bookings']) }}">
-                                <h4 class="text-2xl font-semibold text-gray-700">{{$totalBookings}}</h4>
-                                <div class="text-gray-500">{{ __('messages.Total Bookings') }}</div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="mx-5">
+                    <a href="{{ route('superadmin.index') }}">
+                        <h4 class="text-2xl font-semibold text-gray-700">{{$totalUsers}}</h4>
+                        <div class="text-gray-500">{{ __('messages.Total Users') }}</div>
+                    </a>
                 </div>
             </div>
+
+            <!-- Total Trips -->
+            <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+                <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
+                    <img src="{{ asset('storage/icons/road.svg') }}" alt="Trips" class="h-6 w-6" />
+                </div>
+                <div class="mx-5">
+                    <a href="{{ route('superadmin.index', ['tab' => 'trips']) }}">
+                        <h4 class="text-2xl font-semibold text-gray-700">{{$totalTrips}}</h4>
+                        <div class="text-gray-500">{{ __('messages.Total Trips') }}</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Total Bookings -->
+            <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+                <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
+                    <img src="{{ asset('storage/icons/cars.svg') }}" alt="Bookings" class="h-6 w-6" />
+                </div>
+                <div class="mx-5">
+                    <a href="{{ route('superadmin.index', ['tab' => 'bookings']) }}">
+                        <h4 class="text-2xl font-semibold text-gray-700">{{$totalBookings}}</h4>
+                        <div class="text-gray-500">{{ __('messages.Total Bookings') }}</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
             <div class="mt-4">
                 <div class="flex flex-wrap -mx-6">
@@ -74,59 +74,9 @@
                 </div>
             </div>
             <div class="flex mt-8 gap-4 ">
-                <!-- Map Section -->
-                <div class="w-full  bg-white p-3 rounded-md">
-                    <h3 class="text-2xl font-medium text-gray-700 mb-4">{{ __('messages.Map of Kosovo') }}</h3>
-                    <div id="map" class="w-full h-96 rounded-md shadow-sm"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+      
 
-
-    <!-- Map Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var map = L.map('map').setView([42.5269444444, 21.0072222222], 8);
-
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 10,
-                minZoom: 8,
-            }).addTo(map);
-            const customIcon = L.divIcon({
-                className: 'custom-svg-icon',
-                html: `
-                    <svg width="30px" height="30px" viewBox="-3.12 -3.12 30.24 30.24" xmlns="http://www.w3.org/2000/svg" fill="#477fb3" stroke="#0f97ff" transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="0.00024000000000000003">
-                        <g id="SVGRepo_iconCarrier">
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path d="M17.084 15.812a7 7 0 1 0-10.168 0A5.996 5.996 0 0 1 12 13a5.996 5.996 0 0 1 5.084 2.812zM12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
-                        </g>
-                    </svg>
-                `,
-                iconSize: [40, 40],
-                iconAnchor: [15, 15],
-            });
-
-            fetch('/cities-with-user-count')
-                .then(response => response.json())
-                .then(cities => {
-                    cities.forEach(city => {
-                        if (city.name && city.latitude && city.longitude && city.users_count > 0) {
-                            let coordinates = [parseFloat(city.latitude), parseFloat(city.longitude)];
-                            L.marker(coordinates, { icon: customIcon })
-                                .addTo(map)
-                                .bindPopup(`
-                                    <div class="p-2 bg-gray-100 border border-gray-300 rounded-lg shadow-md">
-                                        <h3 class="text-sm font-bold text-gray-800">${city.name}</h3>
-                                        <h4 class="text-sm text-gray-600">{{ __('messages.Users:') }} <span class="text-blue-600 font-medium">${city.users_count}</span></h4>
-                                    </div>
-                                `);
-                        }
-                    });
-                })
-                .catch(error => console.error('Error:', error));
-        });
-    </script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const ctx1 = document.getElementById('myChart').getContext('2d');
