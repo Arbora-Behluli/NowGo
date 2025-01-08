@@ -2,12 +2,8 @@
     <div class="flex items-center justify-center py-8 px-5">
         <div class="container mx-auto max-w-lg mt-30 mb-30 px-10 py-4 bg-white shadow-md rounded-lg border border-gray-200 lg:h-[624px] md:h-[720px]">
           
-            <h2 class="text-3xl font-medium mb-4 text-center text-gray-800">For questions, please contact us</h2>
-            <p class="text-md mb-6 text-gray-400 text-center">
-                By submitting, you give permission to Trip Mate to store and process your personal information so we can provide you with the content you have requested.
-                For more information see our <a href="#" class="text-aquamarine underline">Privacy Policy</a>.
-            </p>
-
+            <h2 class="text-2xl font-medium mt-10 mb-16 text-center text-gray-800">For questions, please contact us</h2>
+        
             <!-- Form Section -->
             <form id="myForm" action="{{ route('contact.submit') }}" method="POST">
                 @csrf
@@ -29,7 +25,7 @@
                 </div>
 
                 <!-- Subject Dropdown -->
-                <div class="mb-5">
+                <div class="mb-5 mt-5">
                     <select id="subject" name="subject" class="w-full h-10 bg-gray-200 border border-gray-300 rounded-lg shadow-sm p-2 text-sm placeholder-gray-700" required>
                         <option value="" disabled selected>select subject</option>
                         <option value="Info Request">Info Request</option>
@@ -44,7 +40,7 @@
                 </div>
 
                 <!-- Message  -->
-                <div class="mb-2">
+                <div class="mb-2 mt-5">
                     <textarea id="message" name="message" rows="4" placeholder="message" class="w-full h-32 bg-gray-200 border border-gray-300 rounded-lg shadow-sm p-2 text-sm placeholder-gray-700" required></textarea>
                     @error('message')
                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
@@ -52,7 +48,7 @@
                 </div>
 
       <!-- reCAPTCHA Section -->
-                  <div class="mb-2 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2">
+                  <div class="mb-2 flex flex-col mt-5 sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2">
                        <div class="flex-1">
                        <div class="w-full" style="transform: scale(0.85); transform-origin: left;">
                                        {!! NoCaptcha::display() !!}
@@ -66,8 +62,8 @@
 
 
                 <!-- Submit Button -->
-                <div class="mb-5 flex justify-start">
-                    <button id="submitButton" type="submit" class="bg-black text-white font-semibold text-sm py-2 px-4 rounded-lg border border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 inline-flex items-center">
+                <div class="mb-5 flex  justify-start">
+                    <button id="submitButton" type="submit" class="bg-blue-600 text-white font-semibold text-sm py-2 px-4 rounded-lg border border-transparent hover:bg-blue-700 hover:text-white transition duration-300 inline-flex items-center">
                         <span class="button-text">Submit</span>
                         <svg aria-hidden="true" role="status" class="hidden inline w-4 h-4 ms-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
