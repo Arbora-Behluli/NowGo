@@ -3,7 +3,7 @@
         <!-- Welcome Message -->
         <div class="text-left p-6 mb-6 md:w-1/2 bg-transparent">
             <div class=" p-6 ">
-                <h1 class="text-4xl font-bold text-white">
+                <h1 class="text-4xl font-bold text-gray-800">
                     {{ __('messages.Welcome') }}, {{ Auth::user()->name }}!
                 </h1>
                 <p class="text-lg text-white mt-2">
@@ -16,7 +16,7 @@
         <div class="flex flex-col w-full md:w-1/2 space-y-6">
             <!-- Total Users -->
             <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-                <div class="p-3 bg-blue-700 bg-opacity-75 rounded-full">
+                <div class="p-3 bg-gradient-to-r from-green-400 to-lime-700 rounded-full">
                     <img src="{{ asset('storage/icons/users.svg') }}" alt="Users" class="h-6 w-6" />
                 </div>
                 <div class="mx-5">
@@ -29,7 +29,7 @@
 
             <!-- Total Trips -->
             <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-                <div class="p-3 bg-blue-700 bg-opacity-75 rounded-full">
+                <div class="p-3 bg-gradient-to-r from-green-400 to-lime-700 rounded-full">
                     <img src="{{ asset('storage/icons/road.svg') }}" alt="Trips" class="h-6 w-6" />
                 </div>
                 <div class="mx-5">
@@ -42,7 +42,7 @@
 
             <!-- Total Bookings -->
             <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-                <div class="p-3 bg-blue-700 bg-opacity-75 rounded-full">
+                <div class="p-3 bg-gradient-to-r from-green-400 to-lime-700 rounded-full">
                     <img src="{{ asset('storage/icons/cars.svg') }}" alt="Bookings" class="h-6 w-6" />
                 </div>
                 <div class="mx-5">
@@ -61,8 +61,8 @@
                 </div>
             </div>
             <div class="mt-8">
-                <h3 class="text-2xl font-medium text-white mb-6">{{ __('messages.Analytics') }}</h3>
-                <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+                <h3 class="text-2xl px-6 sm:px-6 md:px-6 font-medium text-gray-800 mb-6">{{ __('messages.Analytics') }}</h3>
+                <div class="flex flex-col px-6 sm:px-6 md:px-6 md:flex-row md:space-x-6 space-y-6 md:space-y-0">
                     <!-- First Chart -->
                     <div class="flex-1 bg-white p-6 rounded-lg shadow-md">
                         <canvas id="myChart" class="w-full h-64 md:h-80"></canvas>
