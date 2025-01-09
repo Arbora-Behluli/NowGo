@@ -1,10 +1,6 @@
 <x-app-layout>
     <div class=" min-h-screen ">
-    <div class="container mx-auto px-4 py-6   bg-[#28666e]  ">
-        {{-- bg-[#28666e]  --}}
-
-    
-
+    <div class="container mx-auto px-4 py-6   bg-[#85a98f]  ">
 
   <h1 class="text-3xl font-bold text-white p-6"> {{ __('messages.Drives Of') . ' ' . auth()->user()->name }}</h1>
         

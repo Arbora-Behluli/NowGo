@@ -7,8 +7,7 @@
             },
         }"
         class="relative w-34 mx-auto">
-        <button @click="open = !open"
-        class="w-full flex justify-between items-center px-2 py-1 bg-gray-100 text-gray-700 rounded-lg border border-gray-300 sm:px-2 sm:py-1 text-sm">
+        <button class="w-full flex justify-between items-center px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-lg border border-green-500 transform transition duration-300 sm:px-4 sm:py-2 text-sm">
             <div class="flex items-center space-x-2">
                 <img :src="selectedCountry.flag" alt="" class="w-5 h-auto">
                 <span class="block sm:hidden" x-text="selectedCountry.name.slice(0, 2)"></span>

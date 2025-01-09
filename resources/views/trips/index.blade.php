@@ -1,6 +1,6 @@
 <x-app-layout>
     @auth
-    <div class="container mx-auto bg-[#28666e] ">
+    <div class="container mx-auto bg-[#85a98f] ">
         <div class="flex flex-col sm:justify-between md:flex-row items-center md:items-end mb-6 mt-1 w-full space-y-4 md:space-y-0">
 
             <h1 class="text-3xl font-bold text-white p-6 ">{{ __('messages.Available Rides') }}</h1>
@@ -368,7 +368,7 @@
         
 </div>
 
-<div id="no-rides" class="hidden text-center mt-6 text-gray-500 bg-[#28666e]">
+<div id="no-rides" class="hidden text-center mt-6 text-gray-500 bg-[#85a98f]">
     <p>No available rides for the selected date.</p>
 </div>
 
