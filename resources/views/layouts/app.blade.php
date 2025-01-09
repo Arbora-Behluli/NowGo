@@ -30,7 +30,7 @@
 
         @vite('resources/js/app.js')
     </head>
-    <body class="min-h-screen bg-[#28666e] font-roboto antialiased w-full md:absolute md:w-navbar">
+    <body class="min-h-screen bg-[#85a98f] font-roboto antialiased w-full md:absolute md:w-navbar">
 
         <div class="flex flex-col">
             @include('components.success')
@@ -64,7 +64,7 @@
            @include('components.end-modal')         
 
             <!-- Page Content -->
-             <main class="{{ request()->routeIs('home') ? 'bg-gray-200' : 'bg-[#28666e]' }}">
+             <main class="{{ request()->routeIs('home') ? 'bg-gray-200' : 'bg-[#85a98f]' }}">
                 @if (!Auth::check())
                 {{ $slot }}
                 @endif
