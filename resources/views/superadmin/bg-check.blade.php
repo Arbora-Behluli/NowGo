@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="container mx-auto mt-5 px-5 sm:px-10 md:px-20">
-        <div class="flex justify-center items-center mb-8">
-            <h2 class="text-lg sm:text-xl md:text-2xl text-gray-700 text-center bg-white shadow-md py-1 px-6 sm:px-10 md:px-20 rounded-full inline-block">
+        <div class="flex justify-start  mt-10  py-4">
+            <h2 class=" text-gray-900  font-semibold text-left ">
                 Background Check
             </h2>
         </div>
