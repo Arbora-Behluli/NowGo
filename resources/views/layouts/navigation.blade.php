@@ -2,11 +2,6 @@
         <div :class="sidebarOpen ? 'block' : 'hidden'" @click="sidebarOpen = false" class=" fixed inset-0 z-20 transition-opacity bg-black opacity-50 lg:hidden"></div>
         <div :class="sidebarOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-[100] inset-y-0 left-0 w-64 overflow-y-auto transition duration-300 transform bg-[#12372A] lg:translate-x-0 lg:static lg:inset-0">
             <div class="flex items-center justify-center mt-8">
-                <div class="flex items-center">
-                    <a href="/">
-                    <img src="{{ asset('storage/landing/nowgo.png') }}" class="flex mx-1 font-mono text-2xl font-bold w-[140px]" href="/" />
-                    </a>
-                </div>
             </div>
             <nav class="mt-10 ">
                 @if(Auth::user()->isSuperAdmin())

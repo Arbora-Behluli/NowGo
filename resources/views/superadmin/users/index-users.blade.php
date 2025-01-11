@@ -1,51 +1,48 @@
 <x-app-layout>
-    <div x-data="{ currentTab: 'pending', search: '', filteredUsers() { /* your filtering logic */ } }" class="container mx-auto mt-5 px-4 sm:px-6 lg:px-8 xl:px-10">
-        
-        <!-- Tab Buttons -->
-        <div class="w-full flex justify-center items-center mb-6">
-            <div class="flex gap-1 bg-gray-300 px-0 py-0 rounded-full shadow-sm relative mt-5 w-full sm:w-auto sm:mt-5">
-                <button @click="currentTab = 'pending'" 
-                    :class="currentTab === 'pending' ? 'bg-white text-gray-700 shadow-md' : 'bg-gray-300 text-white'" 
-                    class="flex-1 lg:w-64 sm:flex-none w-full sm:w-auto px-2 py-2 sm:px-6 sm:py-2 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 whitespace-nowrap text-center">
+    <div x-data="{ currentTab: 'pending', search: '', filteredUsers() { /* your filtering logic */ } }" class="px-4 sm:px-10 lg:px-20 mx-auto">
+        <!-- Tab Buttons and Search Bar -->
+        <div class="w-full flex justify-between items-center mt-10 py-4">
+            <!-- Left Side: Tab Buttons -->
+            <div class="flex items-center">
+                <button 
+                    @click="currentTab = 'pending'" 
+                    :class="currentTab === 'pending' ? 'text-gray-900 underline' : ''" 
+                    class="mr-3 font-semibold"
+                >
                     Pending Verification
                 </button>
-                <button @click="currentTab = 'rejected'" 
-                    :class="currentTab === 'rejected' ? 'bg-white text-gray-700 shadow-md' : 'bg-gray-300 text-white'" 
-                    class="flex-1 lg:w-64 sm:flex-none w-full sm:w-auto px-2 py-2 sm:px-6 sm:py-2 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 whitespace-nowrap text-center">
+                <button 
+                    @click="currentTab = 'rejected'" 
+                    :class="currentTab === 'rejected' ? 'text-gray-900 underline' : ''" 
+                    class="mr-3 font-semibold"
+                >
                     Rejected Users
                 </button>
             </div>
-        </div>    
-        
-        <!-- Search Bar -->
-        <div class="border-t border-gray-300 mx-auto w-full"></div>
 
-        <div class="w-full flex justify-left items-center mb-3 mt-5 ">
-            <div class="mx-3">
-                <div class="w-full max-w-sm min-w-30 relative">
-                    <div class="relative">
-                        <input
-                            class="bg-white w-full pr-11 h-8 pl-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-full transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
-                            id="search"
-                            name="search"
-                            type="search"
-                            x-model="search"
-                            placeholder="Search"
-                        />
-                        <button
-                            class="absolute h-6 w-8 right-1 top-1 my-auto px-2 flex items-center bg-white rounded overflow-hidden"
-                            type="button"
-                            @click="filteredUsers()"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 text-slate-600">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                            </svg>
-                        </button>
-                    </div>
+            <!-- Right Side: Search Bar -->
+            <div class="flex items-center">
+                <div class="relative w-full max-w-xs">
+                    <input
+                        class="bg-white w-full pr-10 h-8 pl-3 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-full transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                        id="search"
+                        name="search"
+                        type="search"
+                        x-model="search"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="absolute h-6 w-6 right-2 top-1 my-auto flex items-center bg-white rounded"
+                        type="button"
+                        @click="filteredUsers()"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-slate-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
-
 
         <!-- Pending Verification Table -->
         <div x-show="currentTab === 'pending'" class="relative rounded-lg flex flex-col h-full overflow-y-auto max-h-[calc(80vh-100px)] text-gray-700 bg-white shadow-lg w-full">
