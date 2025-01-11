@@ -90,7 +90,7 @@
                     ],
                     backgroundColor: [
                         '#90DB89', 
-                        '#FF6347', 
+                        '#1f2937', 
                     ],
                     borderWidth: 1
                 }]
@@ -122,7 +122,7 @@
                     data: [{{ $totalUsers }}, {{ $totalTrips }}, {{ $totalBookings }}], // Replace with dynamic data
                     backgroundColor: [
                         '#607ADB', // Teal Blue for Users
-                        '#FFBF00', // Warm Amber for Trips
+                        '#a3a3a3', // Warm Amber for Trips
                         '#39CEDB', // Muted Coral for Bookings
                     ],
                     hoverOffset: 4
