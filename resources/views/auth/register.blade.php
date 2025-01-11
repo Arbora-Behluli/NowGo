@@ -1,19 +1,16 @@
 <x-app-layout>
-    <div class="fixed inset-0 bg-yellow-500 h-screen w-screen overflow-hidden"></div>
-        
-        <svg class="absolute top-0 left-0 w-full h-full z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1440" preserveAspectRatio="none">
-            <path d="M0 0C150 400 50 800 300 1100C500 1350 200 1440 0 1440L0 1440H800V0Z"
-                  fill="#42A5F5" />
-            <path d="M0 0C100 300 200 700 150 1100C100 1350 50 1440 0 1440L0 1440H800V0Z"
-                  fill="#1035AC"  opacity="0.1" />
-        </svg>
-    <div class="relative min-h-screen sm:flex sm:flex-row justify-center bg-transparent rounded-3xl shadow-xl">
-        <div class="flex-col flex self-center lg:px-14 sm:max-w-4xl xl:max-w-md z-10" style="transform: translateY(-40px);">
-            <div class="self-start hidden lg:flex flex-col text-gray-300">
-                <h1 class="text-black my-3 font-semibold font-sans text-4xl">Create your account</h1>
-                <p class="text-black pr-3 text-sm opacity-75">Shërbimi juaj i postës së shpejtë, kudo dhe kurdo!</p>
-            </div>
+    <svg class="absolute top-0 left-0 w-full h-full z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1440" preserveAspectRatio="none">
+        <path d="M0 0C150 400 50 800 300 1100C500 1350 200 1440 0 1440L0 1440H800V0Z" fill="#85a98f" />
+        <path d="M0 0C100 300 200 700 150 1100C100 1350 50 1440 0 1440L0 1440H800V0Z" fill="#00674F" opacity="0.1" />
+    </svg>
+
+<div class="relative min-h-screen sm:flex sm:flex-row justify-center bg-transparent rounded-3xl shadow-xl">
+    <div class="flex-col flex self-center lg:px-14 sm:max-w-4xl xl:max-w-md z-10" style="transform: translateY(-40px);">
+        <div class="self-start hidden lg:flex flex-col text-gray-300">
+            <h1 class="text-black my-3 font-semibold font-sans text-4xl">Create your account</h1>
+            <p class="text-black pr-3 text-sm opacity-75">NowGo – Udhëto larg, ndjehu afër.</p>
         </div>
+    </div>
         <div class="flex justify-center self-center pl-4 pr-4 z-10">
                 <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data" class="p-1 bg-white mx-auto border-4 border-transparent mt-8 shadow-md transition duration-300 hover:shadow-lg mb-20 sm:mb-0">
                 @csrf

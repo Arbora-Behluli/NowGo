@@ -1,18 +1,15 @@
 <x-app-layout>
-    <div class="absolute top-0 left-0 bg-yellow-500 bottom-0 leading-5 h-full w-full overflow-hidden"></div>
-
     <svg class="absolute top-0 left-0 w-full h-full z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1440" preserveAspectRatio="none">
-        <path d="M0 0C150 400 50 800 300 1100C500 1350 200 1440 0 1440L0 1440H800V0Z"
-              fill="#42A5F5" />
-        <path d="M0 0C100 300 200 700 150 1100C100 1350 50 1440 0 1440L0 1440H800V0Z"
-              fill="#1035AC"  opacity="0.1" />
+        <path d="M0 0C150 400 50 800 300 1100C500 1350 200 1440 0 1440L0 1440H800V0Z" fill="#85a98f" />
+        <path d="M0 0C100 300 200 700 150 1100C100 1350 50 1440 0 1440L0 1440H800V0Z" fill="#00674F" opacity="0.1" />
     </svg>
+
 
     <div class="relative min-h-screen sm:flex inline sm:flex-row justify-center bg-transparent rounded-3xl shadow-xl">
         <div class="flex-col flex self-center lg:px-14 sm:max-w-4xl xl:max-w-md z-10">
             <div class="self-start hidden lg:flex flex-col text-gray-300">
-                <h1 class="text-gray-900 my-3 font-semibold font-sans text-4xl">Welcome back</h1>
-                <p class="text-black pr-3 text-sm opacity-75">Shërbimi juaj i postës së shpejtë, kudo dhe kurdo!</p>
+                <h1 class="text-black my-3 font-semibold font-sans text-4xl">Welcome back</h1>
+                <p class="text-black pr-3 text-sm opacity-75">NowGo – Udhëto larg, ndjehu afër.</p>
             </div>
         </div>
 
@@ -76,7 +73,7 @@
                         <span class="h-px w-16 bg-gray-100"></span>
                     </div>
                     <!-- Google Login Button -->
-                                <a href="{{ route('login.google') }}" class="mx-auto  bg-blue-300 border border-transparent mt-1 hover:border-blue-300 shadow transition duration-300 hover:shadow-lg w-40 flex items-center justify-center mb-1 md:mb-0 text-center text-xs">
+                                <a href="{{ route('login.google') }}" class="mx-auto  bg-gray-300 border border-transparent mt-1 hover:border-gray-4z[zp00 shadow transition duration-300 hover:shadow-lg w-40 flex items-center justify-center mb-1 md:mb-0 text-center text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="179" height="46" viewBox="0 0 179 46" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M32.64 22.2045C32.64 21.5664 32.5827 20.9527 32.4764 20.3636H24V23.845H28.8436C28.635 24.97 28.0009 25.9232 27.0477 26.5614V28.8195H29.9564C31.6582 27.2527 32.64 24.9454 32.64 22.2045Z" fill="#4285F4"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 31C26.43 31 28.4673 30.1941 29.9564 28.8195L27.0477 26.5614C26.2418 27.1014 25.2109 27.4205 24 27.4205C21.6559 27.4205 19.6718 25.8373 18.9641 23.71H15.9573V26.0418C17.4382 28.9832 20.4818 31 24 31Z" fill="#34A853"/>
