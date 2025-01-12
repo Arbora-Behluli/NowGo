@@ -1,7 +1,6 @@
 <div class="w-full flex flex-col justify-center items-center text-center bg-cover bg-center py-12 relative">
 
-    <img src="{{ asset('storage/landing/o.jpg') }}" alt="Background Image" class="hidden md:block absolute inset-0 w-full h-full object-contain">
-
+     <img src="{{ asset('storage/landing/b.jpg') }}" alt="Background Image" class="hidden md:block absolute inset-0 w-full h-full object-contain">  <img src="{{ asset('storage/landing/b.jpg') }}" alt="Background Image" class="hidden md:block absolute inset-0 w-full h-full object-contain">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute md:relative">
 
         <div class="flex justify-center items-center w-full">
