@@ -41,7 +41,7 @@
             </button>
             <button
                 onclick="location.href='{{ route('register') }}'"
-                class="mx-3 whitespace-nowrap border-solid hover:font-bold bg-yellow-400 text-white  shadow-md hover:shadow-gray-600  focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out">
+                class="mx-3 whitespace-nowrap border-solid hover:font-bold bg-green-500 text-white  shadow-md hover:shadow-gray-600  focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out">
                 Register
             </button>
         </div>

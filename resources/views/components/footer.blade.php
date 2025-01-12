@@ -1,5 +1,5 @@
 
-<footer class="relative bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 bg-[length:200%] animate-gradient-background overflow-hidden text-black py-14">
+<footer class="relative bg-gradient-to-r from-green-400 via-green-500 to-green-300 bg-[length:200%] animate-gradient-background overflow-hidden text-black py-14">
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm mt-14 text-center md:text-left">
 
         <div class="flex items-start justify-center md:col-span-1">
