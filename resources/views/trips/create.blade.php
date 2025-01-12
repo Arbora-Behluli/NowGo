@@ -64,16 +64,7 @@
     <div class="flex items-center justify-center p-8">
         <div class="hover:shadow-2xl w-full max-w-lg ride-card bg-white p-6 rounded-lg transition-shadow duration-500 shadow-md flex flex-col justify-between">
             <h1 class="text-xl font-semibold text-gray-800 mb-6 text-center leading-tight">{{ __('messages.Plan Your Next Journey') }}</h1>
-            <div class="flex font-light border-2 rounded-xl border-yellow-400 ">
-                <img
-                        src="{{ asset('storage/icons/warn.svg') }}"
-                        alt="avatar"
-                        class="relative inline-block h-auto w-20 p-2"
-                    />
-                <p class="p-2 md:text-md text-sm inline-block">
-                    {{ __('messages.Post your trip 24 hours in advance to double your chances of finding travel companions! Plan ahead, travel stress-free, and enjoy every moment of your journey!') }}
-                </p>
-            </div>
+            
             @if($errors->any())
                 <div id="error-message" class="text-gray-800 items-center mt-2 gap-2 bg-red-200 border-2 border-white/80 px-6 py-3 rounded-lg shadow-lg">
                     <ul>
