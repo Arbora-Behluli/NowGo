@@ -4,28 +4,6 @@
 
   <h1 class="text-3xl font-bold text-white p-6"> {{ __('messages.Drives Of') . ' ' . auth()->user()->name }}</h1>
         
-
-        {{-- Butonat --}}
-        <div class="w-full flex justify-center items-center mb-3 mt-5">
-            <button onclick="filterBookings('all')"
-              class="min-w-16 sm:min-w-24 px-2 sm:px-4 py-1 sm:py-1 relative overflow-hidden rounded-full bg-[#a5b8bd] text-white border-none cursor-pointer before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-gradient-to-r before:from-orange-300 before:to-orange-500 before:scale-x-0 before:origin-left before:transition-transform before:duration-500 hover:before:scale-x-100 mr-2">
-              <span class="relative z-10">{{ __('messages.All') }}</span>
-            </button>
-          
-            <button onclick="filterBookings('paid')"
-              class="min-w-16 sm:min-w-24 px-2 sm:px-4 py-1 sm:py-1 relative overflow-hidden rounded-full bg-[#a5b8bd] text-white border-none cursor-pointer before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-gradient-to-r before:from-emerald-500 before:to-emerald-700 before:scale-x-0 before:origin-left before:transition-transform before:duration-500 hover:before:scale-x-100 mr-2">
-              <span class="relative z-10">{{ __('messages.Paid') }}</span>
-            </button>
-          
-            <button onclick="filterBookings('refunded')"
-              class="min-w-16 sm:min-w-24 px-2 sm:px-4 py-1 sm:py-1 relative overflow-hidden rounded-full bg-[#a5b8bd] text-white border-none cursor-pointer before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-gradient-to-r before:from-red-500 before:to-red-700 before:scale-x-0 before:origin-left before:transition-transform before:duration-500 hover:before:scale-x-100">
-              <span class="relative z-10">{{ __('messages.Refunded') }}</span>
-            </button>
-          </div>
-          
-
-       
-
         {{-- pjesa e pare qe shfaqet --}}
     
         <div id="bookings-container" class="space-y-4">
