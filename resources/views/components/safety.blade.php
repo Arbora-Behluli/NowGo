@@ -4,11 +4,11 @@
             At NowGo, safety is our top priority.
         </h1>
         <p class="p-4 w-full">
-            We are committed to protecting your personal data and ensuring that your interactions with our app are secure.
-            Your trust is essential to us, and we work tirelessly to maintain the highest standards of security.
+            We are committed to making every journey secure, reliable, and stress-free.
+            We combine cutting-edge technology, meticulous vehicle care, and driver expertise to ensure a safe experience for all our passengers.
         </p>
     </div>
     <div class="w-1/3 hidden lg:block">
-        <img class="w-64 h-64"  src="{{ asset('storage/landing/s.png') }}">
+        <img class="w-64 h-64"  src="{{ asset('storage/landing/v.png') }}">
     </div>
 </div>
