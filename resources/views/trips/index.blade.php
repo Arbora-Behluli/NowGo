@@ -33,20 +33,22 @@
 
         <form action="{{ route('trips.index') }}" method="GET" class="mb-8 flex flex-wrap items-center justify-center w-full max-w-full px-4 ">
             <!-- Origin City Select -->
-            <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                <select name="origin_city_id" id="origin-city"
-                class="border border-gray-300 rounded-md px-3 py-1.5 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 transition duration-200">
-                <option value="" class="text-gray-800">{{ __('messages.From:') }}</option>
-                    @foreach ($cities as $city)
-                        <option value="{{ $city->id }}" {{ request('origin_city_id') == $city->id ? 'selected' : '' }}>
-                            {{ $city->name }}
-                        </option>
-                    @endforeach
-                </select>
-            </div>
-        
-            <!-- Swap Cities Button -->
-            <div class="flex items-center justify-center mb-4 md:mb-0">
+            <div class="flex flex-wrap items-center gap-4 mb-2">
+                <!-- Origin City Select -->
+                <div class="w-full md:w-32">
+                    <select name="origin_city_id" id="origin-city"
+                            class="border border-gray-300 rounded px-2 py-1 text-sm w-full focus:outline-none focus:ring-1 focus:ring-orange-300 transition duration-200">
+                        <option value="" class="text-gray-800">{{ __('messages.From:') }}</option>
+                        @foreach ($cities as $city)
+                            <option value="{{ $city->id }}" {{ request('origin_city_id') == $city->id ? 'selected' : '' }}>
+                                {{ $city->name }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+            
+               <!-- Swap Cities Button -->
+            <div class="flex items-center justify-center mb-2 md:mb-0">
                 <button type="button" class="swap-button p-1" id="swap-cities">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="20px" viewBox="0 0 24 24" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -55,33 +57,32 @@
                     </svg>
                 </button>
             </div>
-        
-            <!-- Destination City Select -->
-            <div class="w-full md:w-1/4 mb-4 md:mb-0 md:mr-4">
-                <select name="destination_city_id" id="destination-city"
-                        class="border border-gray-300 rounded-md px-3 py-1.5 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 transition duration-200">
-                    <option value="" class="text-gray-800">{{ __('messages.To:') }}</option>
-                    @foreach ($cities as $city)
-                        <option value="{{ $city->id }}" {{ request('destination_city_id') == $city->id ? 'selected' : '' }}>
-                            {{ $city->name }}
-                        </option>
-                    @endforeach
-                </select>
+                <!-- Destination City Select -->
+                <div class="w-full md:w-32">
+                    <select name="destination_city_id" id="destination-city"
+                            class="border border-gray-300 rounded px-2 py-1 text-sm w-full focus:outline-none focus:ring-1 focus:ring-orange-300 transition duration-200">
+                        <option value="" class="text-gray-800">{{ __('messages.To:') }}</option>
+                        @foreach ($cities as $city)
+                            <option value="{{ $city->id }}" {{ request('destination_city_id') == $city->id ? 'selected' : '' }}>
+                                {{ $city->name }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+            
+                <!-- Date Picker -->
+                <div class="w-full md:w-32">
+                    <input type="text" id="filter-date" name="date"
+                           class="text-gray-900 border border-gray-300 rounded px-2 py-1 text-sm w-full focus:outline-none focus:ring-1 focus:ring-orange-300 transition duration-200 text-center"
+                           placeholder="{{ __('messages.Select a date') }}" readonly
+                           value="{{ request('date') }}">
+                </div>
             </div>
-        
-            <!-- Date Picker -->
-            <div class="w-full md:w-1/4  flex items-center  mb-4 md:mb-0">
-                
-                <input type="text" id="filter-date" name="date"
-                       class="text-gray-900 border border-gray-300 rounded-md px-3 py-1.5 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 transition duration-200 text-center"
-                       placeholder="{{ __('messages.Select a date') }}" readonly
-                       value="{{ request('date') }}">
-                      
-            </div>
+            
             
         
             <!-- Filter and Reset Buttons -->
-            <div class="w-full flex items-center justify-center mt-4 space-x-4 mb-6">
+            <div class="w-full flex items-center justify-center mt-4 space-x-4 mb-2">
                 <button type="submit"
                         class="w-24 px-4 py-1 text-sm rounded-md transition duration-200 bg-white text-[#033f63] font-semibold hover:bg-orange-400 hover:text-white">
                     {{ __('messages.Filter') }}
@@ -100,13 +101,13 @@
 
 
 
-<div id="rides-list" class="grid grid-cols-1 gap-6 mb-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 px-4 sm:px-6 lg:px-8 mt-20 justify-items-center">
+<div id="rides-list" class="grid grid-cols-1 gap-6 mb-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 px-4 sm:px-6 lg:px-8 mt-10 justify-items-center">
     @foreach ($trips as $trip)
     
 
     <div class="ride-card max-w-sm rounded-xl shadow-md bg-white p-3 relative"  data-departure="{{ $trip->departure_time }}">
         {{-- <div class="ride-card bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 shadow-md flex flex-col justify-between" data-departure="{{ $trip->departure_time }}"> --}}
-        <div class="max-w-sm rounded-xl shadow-md bg-[#c9dde2] border  p-2">
+        <div class="max-w-sm rounded-xl ">
 
         <!-- Book and Edit -->
         <div class="absolute top-2 right-6">
