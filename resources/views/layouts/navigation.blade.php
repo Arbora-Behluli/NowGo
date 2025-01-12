@@ -42,18 +42,7 @@
                                 <img src="{{ asset('storage/icons/trips.svg') }}" alt="avatar" class="relative inline-block h-5 w-5 object-cover object-center" />
                                 <span class="mx-3 text-sm text-white ">{{ __('messages.My Trips Bookings') }}</span>
                             </a>
-                            <a class="flex items-center px-4 py-2 mt-2 {{ Request::routeIs('bookings.myTransactions') ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}" href="{{ route('bookings.transactions') }}">
-                                <img src="{{ asset('storage/icons/credit-card.svg') }}" alt="avatar" class="relative inline-block h-6 w-6 object-cover object-center" />
-                                <span class="mx-3 text-sm text-white">{{ __('messages.My Transactions') }}</span>
-                            </a>
-                            <a class="flex items-center px-4 py-2 mt-2 {{ Request::routeIs('user.qr-code') ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}" href="{{ route('user.qr-code', ['id' => auth()->user()->id]) }}">
-                                <img src="{{ asset('storage/icons/qr-code.svg') }}" alt="avatar" class="relative inline-block h-5 w-5 object-cover object-center" />
-                                <span class="mx-3 text-sm text-white">{{ __('messages.My QR-Code') }}</span>
-                            </a>
-                            <a class="flex items-center px-4 py-2 mt-2 {{ Request::routeIs('scan.qr') ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}" href="{{ route('scan.qr', auth()->user()->id) }}">
-                                <img src="{{ asset('storage/icons/qr-code-scanning.svg') }}" alt="avatar" class="relative inline-block h-5 w-5 object-cover object-center" />
-                                <span class="mx-3 text-sm text-white">{{ __('messages.Scan QR-Code') }}</span>
-                            </a>
+                            
                         </div>
                     </div>
                         @if(Auth::user()->isSuperAdmin())
@@ -73,10 +62,7 @@
                                 <img src="{{ asset('storage/icons/table.svg') }}" alt="avatar" class="relative inline-block h-5 w-5 object-cover object-center" />
                                 <span class="mx-3 text-sm text-white">{{ __('messages.Users, Booking, Trips') }}</span>
                             </a>
-                            <a class="flex items-center px-4 py-2 mt-2 {{ Request::routeIs('superadmin.users.index-users') ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}" href="{{ route('superadmin.users.index-users') }}">
-                                <img src="{{ asset('storage/icons/verify.svg') }}" alt="avatar" class="relative inline-block h-5 w-5  object-cover object-center" />
-                                <span class="mx-3 text-sm text-white">{{ __('messages.Verifications') }}</span>
-                            </a>
+                            
                             <a class="flex items-center px-4 py-2 mt-2 {{ Request::routeIs('superadmin.bg-check') ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}" href="{{ route('superadmin.bg-check') }}">
                                 <img src="{{ asset('storage/icons/secure.svg') }}" alt="avatar" class="relative inline-block h-5 w-5  object-cover object-center" />
                                 <span class="mx-3 text-sm text-white">{{ __('messages.Background Check') }}</span>
@@ -86,22 +72,9 @@
                 </div>
                     @endif
                     @if( Auth::user()->isSuperAdmin())
-                        <a class="flex items-center px-6 py-2 mt-4 {{ Request::routeIs('superadmin.transactions') ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}"
-                           href="{{ route('superadmin.transactions') }}">
-                            <img
-                                src="{{ asset('storage/icons/transactions.svg') }}"
-                                alt="avatar"
-                                class="relative inline-block h-6 w-6  object-cover object-center"
-                            />
-                            </svg>
-
-                            <span class="mx-3 text-white">{{ __('messages.Transactions') }}</span>
-                        </a>
+                        
                     @endif
-                <a class="flex items-center px-6 py-2 mt-4 {{ Request::routeIs(config('chatify.routes.prefix')) ? 'bg-gray-800 text-white' : 'text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100' }}" href="{{ route(config('chatify.routes.prefix')) }}">
-                    <img src="{{ asset('storage/icons/chat.svg') }}" alt="avatar" class="relative inline-block h-5 w-5 object-cover object-center" />
-                    <span class="mx-3 text-white">{{ __('messages.Chat') }}</span>
-                </a>
+               
             </nav>
         </div>
         <div class="flex flex-col flex-1 overflow-hidden ">
