@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1535)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(1.7210519069255128,0,0,1.7210519069255128,100,100)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="464.832" height="464.832"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 464.832 464.832" xml:space="preserve">
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 464.832 464.832" xml:space="preserve">
 <g>
 	<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M457.749,251.44h-4.646h-10.257
 		l-4.002-17.813l6.629-5.434c-2.547-6.1-4.889-10.111-4.889-10.111l-55.828-15.08l-62.067-49.004c-3.099,0-16.026,0-32.211,0
@@ -15,8 +19,8 @@
 		 M284.194,260.831h-8.419v-36.9h8.419V260.831z M326.327,234.679h-7.338v-7.338h-7.336v7.338h-7.338v-7.338h7.338v-7.336h7.336
 		v7.336h7.338v-7.336h7.336v7.336h7.338v-7.336h7.336v7.336h7.338v7.338h-7.338v-7.338h-7.336v7.338h-7.338v-7.338h-7.336V234.679z
 		 M350.95,303.681c-12.353,0-22.403-10.05-22.403-22.402c0-12.352,10.05-22.402,22.403-22.402c12.353,0,22.402,10.05,22.402,22.402
-		C373.353,293.631,363.303,303.681,350.95,303.681z"></path>
+		C373.353,293.631,363.303,303.681,350.95,303.681z"/>
 	<polygon style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" points="218.87,246.261 
-		225.52,246.261 222.196,232.681 	"></polygon>
+		225.52,246.261 222.196,232.681 	"/>
 </g>
-</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1535"><rect width="1000" height="1000" x="0" y="0" rx="500" ry="500"></rect></clipPath></defs></svg>
+</svg>

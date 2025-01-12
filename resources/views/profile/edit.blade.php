@@ -17,11 +17,7 @@
 
             </div>
             <div>
-                <div class="p-4 bg-white shadow sm:roundeed-lg">
-                    <div class="max-w-xl">
-                    @include('profile.partials.contact')
-                    </div>
-                </div>
+                
          </div>
     </div>
  </div>

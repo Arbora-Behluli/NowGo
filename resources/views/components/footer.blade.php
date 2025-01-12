@@ -3,7 +3,7 @@
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm mt-14 text-center md:text-left">
 
         <div class="flex items-start justify-center md:col-span-1">
-            <img  src="{{ asset('storage/landing/nowgo.svg') }}" class="w-[240px] h-[80px]">
+            <img  src="{{ asset('storage/landing/taxii.svg') }}" class="w-[240px] h-[80px]">
         </div>
 
         <div>
