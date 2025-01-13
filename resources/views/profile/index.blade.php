@@ -274,59 +274,59 @@
             </div>
 
 
-            <!-- Ride History Section -->
-            <div x-data="tabs()" class="flex flex-col w-full xl:w-2/3 max-h-[412px] overflow-y-auto">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 bg-white rounded-lg shadow-xl flex-1 overflow-y-auto">
-        <!-- Titulli -->
-        <h2 class="text-lg sm:text-xl lg:text-xl font-bold mt-4 mb-4 text-gray-800">
-            {{ __('messages.Completed Rides Of') . ' ' . auth()->user()->name }}
-        </h2>
+                <!-- Ride History Section -->
+                <div x-data="tabs()" class="flex flex-col w-full xl:w-2/3 max-h-[412px] overflow-y-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 bg-white rounded-lg shadow-xl flex-1 overflow-y-auto">
+            <!-- Titulli -->
+            <h2 class="text-lg sm:text-xl lg:text-xl font-bold mt-4 mb-4 text-gray-800">
+                {{ __('messages.Completed Rides Of') . ' ' . auth()->user()->name }}
+            </h2>
 
-        <div class="flex flex-wrap justify-start lg:justify-start gap-4 mb-6 mt-6">
-            <button @click="currentTab = 'driver'" 
-                class="px-5 py-1.5 rounded-lg bg-customgreen-400 hover:bg-customgreen-500 text-white font-medium text-sm sm:text-base">
-                {{ __('messages.Driver') }}
-            </button>
-            <button @click="currentTab = 'passenger'" 
-                class="px-5 py-1.5 rounded-lg bg-customgreen-400 hover:bg-customgreen-500 text-white font-medium text-sm sm:text-base">
-                {{ __('messages.Passenger') }}
-            </button>
-        </div>
-        <div id="bookings" class="space-y-4">
-
-
-@foreach ($bookings as $ride)
-    @if($ride->trip && $ride->trip->status === 'Completed')
-        <div
-            id="passenger"
-            x-show="currentTab === 'passenger'"
-            class="bg-white shadow-md rounded-lg border border-customgreen-400 shadow-neon overflow-hidden max-w-4xl mx-auto">
-            <div class="flex justify-between items-center p-4 cursor-pointer bg-white" onclick="toggleDetails(this)">
-                <div>
-
-                    <div class="flex items-center gap-5">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.197 5.46A.824.824 0 0 0 16.5 5h-9a.824.824 0 0 0-.697.46l-1.988 4.638L5.285 9H3v1.5a.501.501 0 0 0 .5.5 2.572 2.572 0 0 1 .367-.388A2.532 2.532 0 0 0 3 12.522V19.5a.501.501 0 0 0 .5.5h2a.501.501 0 0 0 .5-.5v-1.831A46.229 46.229 0 0 0 12 18a46.244 46.244 0 0 0 6.001-.331L18 19.5a.501.501 0 0 0 .5.5h2a.501.501 0 0 0 .5-.5v-6.978a2.534 2.534 0 0 0-.87-1.909 2.523 2.523 0 0 1 .359.387h.011a.501.501 0 0 0 .5-.5V9h-2.286zM7.66 6h8.68l1.715 4H5.945zM5 19H4v-1.79a1.983 1.983 0 0 0 .613.235c.118.024.254.048.387.071zm15 0h-1v-1.484c.133-.023.269-.047.387-.07A1.989 1.989 0 0 0 20 17.21zm-.525-7.632A1.53 1.53 0 0 1 20 12.522v2.946a1.015 1.015 0 0 1-.808.997A43.178 43.178 0 0 1 12 17a43.255 43.255 0 0 1-7.192-.535A1.015 1.015 0 0 1 4 15.468v-2.946a1.532 1.532 0 0 1 .524-1.156 1.49 1.49 0 0 1 .568-.307L5.296 11h13.406l.205.06a1.493 1.493 0 0 1 .568.308zM17 13h2v1a1 1 0 0 1-1 1h-2zM7 13l1 2H6a1 1 0 0 1-1-1v-1zm2 1h6v1H9z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
-                        <h3 class="text-sm md:text-lg font-medium text-gray-900 flex items-center gap-2">
-                            {{ $ride->trip->origincity->name }}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                            {{ $ride->trip->destinationcity->name }}
-                        </h3>
-                    </div>
-                    <p class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ml-1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-                        </svg>
-                        &nbsp;&nbsp;&nbsp;&nbsp;{{ $ride->trip->departure_time->format('d/m') }}
-                    </p>
-                </div>
-                <svg class="w-5 h-5 text-gray-500 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 15l-6-6h12l-6 6z"/>
-                </svg>
+            <div class="flex flex-wrap justify-start lg:justify-start gap-4 mb-6 mt-6">
+                <button @click="currentTab = 'driver'" 
+                    class="px-5 py-1.5 rounded-lg bg-customgreen-400 hover:bg-customgreen-500 text-white font-medium text-sm sm:text-base">
+                    {{ __('messages.Driver') }}
+                </button>
+                <button @click="currentTab = 'passenger'" 
+                    class="px-5 py-1.5 rounded-lg bg-customgreen-400 hover:bg-customgreen-500 text-white font-medium text-sm sm:text-base">
+                    {{ __('messages.Passenger') }}
+                </button>
             </div>
-            <div class="details hidden px-4 py-2 bg-[#c9dde2]">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-6">
+            <div id="bookings" class="space-y-4">
+
+
+    @foreach ($bookings as $ride)
+        @if($ride->trip && $ride->trip->status === 'Completed')
+            <div
+                id="passenger"
+                x-show="currentTab === 'passenger'"
+                class="bg-white shadow-md rounded-lg border border-customgreen-400 shadow-neon overflow-hidden max-w-4xl mx-auto">
+                <div class="flex justify-between items-center p-4 cursor-pointer bg-white" onclick="toggleDetails(this)">
+                    <div>
+
+                        <div class="flex items-center gap-5">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.197 5.46A.824.824 0 0 0 16.5 5h-9a.824.824 0 0 0-.697.46l-1.988 4.638L5.285 9H3v1.5a.501.501 0 0 0 .5.5 2.572 2.572 0 0 1 .367-.388A2.532 2.532 0 0 0 3 12.522V19.5a.501.501 0 0 0 .5.5h2a.501.501 0 0 0 .5-.5v-1.831A46.229 46.229 0 0 0 12 18a46.244 46.244 0 0 0 6.001-.331L18 19.5a.501.501 0 0 0 .5.5h2a.501.501 0 0 0 .5-.5v-6.978a2.534 2.534 0 0 0-.87-1.909 2.523 2.523 0 0 1 .359.387h.011a.501.501 0 0 0 .5-.5V9h-2.286zM7.66 6h8.68l1.715 4H5.945zM5 19H4v-1.79a1.983 1.983 0 0 0 .613.235c.118.024.254.048.387.071zm15 0h-1v-1.484c.133-.023.269-.047.387-.07A1.989 1.989 0 0 0 20 17.21zm-.525-7.632A1.53 1.53 0 0 1 20 12.522v2.946a1.015 1.015 0 0 1-.808.997A43.178 43.178 0 0 1 12 17a43.255 43.255 0 0 1-7.192-.535A1.015 1.015 0 0 1 4 15.468v-2.946a1.532 1.532 0 0 1 .524-1.156 1.49 1.49 0 0 1 .568-.307L5.296 11h13.406l.205.06a1.493 1.493 0 0 1 .568.308zM17 13h2v1a1 1 0 0 1-1 1h-2zM7 13l1 2H6a1 1 0 0 1-1-1v-1zm2 1h6v1H9z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
+                            <h3 class="text-sm md:text-lg font-medium text-gray-900 flex items-center gap-2">
+                                {{ $ride->trip->origincity->name }}
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                {{ $ride->trip->destinationcity->name }}
+                            </h3>
+                        </div>
+                        <p class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                            </svg>
+                            &nbsp;&nbsp;&nbsp;&nbsp;{{ $ride->trip->departure_time->format('d/m') }}
+                        </p>
+                    </div>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 15l-6-6h12l-6 6z"/>
+                    </svg>
+                </div>
+                <div class="details hidden px-4 py-2 bg-[#c9dde2]">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-6">
 
                     <!-- Driver Card  -->
                     <div class="flex items-center space-x-4 bg-white shadow-md rounded-xl p-4  border border-customgreen-400">
