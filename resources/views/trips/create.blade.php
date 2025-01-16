@@ -42,25 +42,25 @@
                     });
         </script>
     </head>
-    <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-center mt-1 w-full space-y-4 md:space-y-0">
-            <h1 class="text-3xl font-bold text-white p-6">{{ __('messages.Create Trips') }}</h1>
-            <div class="flex gap-2 md:flex-row  md:space-y-0 md:space-x-2 mt-4 md:mt-0 mr-4">
-                <a href="{{ route('trips.index') }}"
-                class="w-28 px-4 py-1 text-sm rounded-md transition duration-200 
-                       {{ request()->routeIs('trips.index') ? 'bg-white text-[#033f63]' : 'bg-white text-[#033f63]' }}
-                       hover:bg-orange-400 hover:text-white font-semibold text-center">
-                {{ __('messages.Passenger') }}
-             </a>
-                <a href="{{ route('trips.create') }}"
-                class="w-28 px-4 py-1 text-sm rounded-md transition duration-200 
-                       {{ request()->routeIs('trips.create') ? 'bg-[#033f63] text-white' : 'bg-[#033f63] text-white ' }}
-                       hover:bg-white hover:text-[#033f63] text-center font-semibold">
-                {{ __('messages.Driver') }}
-             </a>
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mt-1 w-full space-y-4 md:space-y-0">
+                <h1 class="text-3xl font-bold text-white p-6">{{ __('messages.Create Trips') }}</h1>
+                <div class="flex gap-2 md:flex-row  md:space-y-0 md:space-x-2 mt-4 md:mt-0 mr-4">
+                    <a href="{{ route('trips.index') }}"
+                    class="w-28 px-4 py-1 text-sm rounded-md transition duration-200 
+                        {{ request()->routeIs('trips.index') ? 'bg-white text-[#033f63]' : 'bg-white text-[#033f63]' }}
+                        hover:bg-orange-400 hover:text-white font-semibold text-center">
+                    {{ __('messages.Passenger') }}
+                </a>
+                    <a href="{{ route('trips.create') }}"
+                    class="w-28 px-4 py-1 text-sm rounded-md transition duration-200 
+                        {{ request()->routeIs('trips.create') ? 'bg-[#033f63] text-white' : 'bg-[#033f63] text-white ' }}
+                        hover:bg-white hover:text-[#033f63] text-center font-semibold">
+                    {{ __('messages.Driver') }}
+                </a>
+                </div>
             </div>
         </div>
-    </div>
     <div class="flex items-center justify-center p-8">
         <div class="hover:shadow-2xl w-full max-w-lg ride-card bg-white p-6 rounded-lg transition-shadow duration-500 shadow-md flex flex-col justify-between">
             <h1 class="text-xl font-semibold text-gray-800 mb-6 text-center leading-tight">{{ __('messages.Plan Your Next Journey') }}</h1>
