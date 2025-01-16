@@ -119,26 +119,26 @@
                                     <path d="M9.0907 17.7804C7.6807 18.7204 7.6807 20.2603 9.0907 21.2003C10.6907 22.2703 13.3107 22.2703 14.9107 21.2003C16.3207 20.2603 16.3207 18.7204 14.9107 17.7804C13.3207 16.7204 10.6907 16.7204 9.0907 17.7804Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <div class="relative w-1/2">
-                                <input type="text" id="price" name="price"
-                                       class="border border-gray-300 rounded-md px-2 py-2 bg-white shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-                                       placeholder="Price:" value="{{ old('price', $trip->price) }}" required>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" class="absolute right-2 top-2">
-                                    <circle opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                                    <path d="M15 6.80269C14.1175 6.29218 13.0929 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18C13.0929 18 14.1175 17.7078 15 17.1973" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M5 10.5H10" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M5 13.5H10" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
+                                <div class="relative w-1/2">
+                                    <input type="text" id="price" name="price"
+                                        class="border border-gray-300 rounded-md px-2 py-2 bg-white shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                                        placeholder="Price:" value="{{ old('price', $trip->price) }}" required>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" class="absolute right-2 top-2">
+                                        <circle opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                                        <path d="M15 6.80269C14.1175 6.29218 13.0929 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18C13.0929 18 14.1175 17.7078 15 17.1973" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M5 10.5H10" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M5 13.5H10" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col items-center space-y-4">
-                            <button type="submit"
-                                    class="px-3 py-1 text-xs rounded-full transition duration-200 bg-blue-500 text-white hover:bg-blue-600 w-[70px] h-[28px] max-w-full">
-                                Update
-                            </button>
-                        </div>
-                    </form>
+                            <div class="flex flex-col items-center space-y-4">
+                                <button type="submit"
+                                        class="px-3 py-1 text-xs rounded-full transition duration-200 bg-blue-500 text-white hover:bg-blue-600 w-[70px] h-[28px] max-w-full">
+                                    Update
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
 
-</x-app-layout>
+    </x-app-layout>
