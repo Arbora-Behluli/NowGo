@@ -139,7 +139,7 @@
                                 <p class="relative inline-block  object-cover object-center" > {{$available_seats}} {{ __('messages.free seats') }}</p>
 
                             </div>
-                            @if ($available_seats > 0)
+                            {{-- @if ($available_seats > 0)
                             <div class="flex-col  pb-6">
                                 <h1 class="text-lg pt-3">{{ __('messages.Choose the number of seats:') }}</h1>
                                 <input class="  border border-gray-700 rounded-lg bg-gray-200 bg-opacity-25 shadow-sm focus:outline-none focus:ring-2 focus:border-transparent text-gray-700"
@@ -159,14 +159,14 @@
                                 {{ __('messages.Book Now') }}
                                 </button>
                             </div>
-                            @else
-                            <div>
+                            @else --}}
+                            {{-- <div>
                                 <div class="rounded-md bg-red-500 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md  focus:bg-red-700 focus:shadow-none  active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:bg-red-500 md:w-40 cursor-not-allowed opacity-50">
                                     @lang('messages.All Booked Up')
                                 </div>
 
                             </div>
-                        @endif
+                        @endif --}}
                     </div>
             </form>
         </div>

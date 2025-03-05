@@ -73,10 +73,10 @@
                         </div>
                 </form>
                 <div class="flex flex-col md:flex-row items-center mx-4 pb-4 space-x-2">
-                    <a  href="{{route('chat')}}"
+                    {{-- <a  href="{{route('chat')}}"
                         class="w-full rounded-lg my-2 bg-white py-2 px-4 border border-transparent text-center text-sm text-black transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-green-300 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none md:w-40">
                         Chat
-                    </a>
+                    </a> --}}
                     @if(!empty($booking->stripe_charge_id))
                         <form action="{{ route('bookings.refund', $booking->id) }}" method="POST">
                         @csrf
